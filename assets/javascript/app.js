@@ -1,6 +1,6 @@
 var score = 0;
 var recentQuestion = 0;
-var questions = [
+var triviaQuestions = [
   {
     question:
       "What would Daffy inevitably mutter when bested by someone like Bugs Bunny??",
@@ -75,11 +75,11 @@ $("recentQuestion").html(
   "Question #" + (recentQuestion + 1) + "/" + triviaQuestions.length
 );
 $(".question").html(
-  "<h2>" + triviaQuestions[recentQuestions].question + "</h2>"
+  "<h2>" + triviaQuestions[recentQuestion].question + "</h2>"
 );
 for (var i = 0; i < 4; i++) {
   var options = $("<div>");
-  options.text(triviaQuestions[recentQuestions].showAnswer[i]);
+  options.text(triviaQuestions[recentQuestion].showAnswer[i]);
   options.attr({ "data-index": i });
   options.addClass("thisOption");
   $(".answerList").append(options);
@@ -111,8 +111,8 @@ function checkAnswer() {
   $(".thisOption").empty();
   $(".question").empty();
   var correctAnswerText =
-    triviaQuestions[recentQuestions].showAnswer[
-      triviaQuestions[recentQuestions].answer
+    triviaQuestions[recentQuestion].showAnswer[
+      triviaQuestions[recentQuestion].answer
     ];
   var correctAnswerIndex = triviaQuestions[recentQuestion].answer;
 
