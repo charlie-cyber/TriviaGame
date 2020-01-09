@@ -1,41 +1,57 @@
+header{
+    margin-bottom: 20px;
+}
+
 body{
-    background: url(../images/looneytunes.jpg) no-repeat center center fixed;
+    background: url(../images/looneytunes.jpg);
+    background-attachment: fixed;
+    
+ 
  
 }
+
 .btn-primary,.reset{
     background-color: black;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    padding: 10px;
+    padding: 20px;
     margin-top: 100px;
 
 }
 .btn-primary:hover, .reset:hover{
     cursor: pointer;
     background-color: #0f0f0f;
-   
-
+    
     
 }
 .container {
     background-color: blue;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
     text-align: center;
-    height: 540px;
+    height: 100px;
     width: 600px;
-   
+
 }
 h1{
-    text-align: center;
+    color:black;
+    text-align: left;
+    font-size: 20px;
+    
+}
+h2, #message, #finalMessage{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 #timeRemaining{
     text-align: center;
+    font-size: 20px;
 
 }
 
 #questions{
     text-align: center;
+    font-size: 20px;
 }

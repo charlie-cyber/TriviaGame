@@ -3,25 +3,24 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width"=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Trivia Game</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="assets/javascript/app.js"></script>
 </head>
 
 
 <body>
   <div class="Container">
     <h1> Looney Tunes Trivia</h1>
-    <button class='btn btn-primary' id='startbtn'>Start</button>
+    <button class='btn btn-primary' id='startBtn'>Start</button>
 
     <div id=timeleft></div>
     <div id=recentQuestion></div>
     <div class='question'></div>
-    <div class='answerList'></div>
+    <div class='showAnswer'></div>
     <div id=message></div>
     <div id=correctedAnswer></div>
 
@@ -35,6 +34,7 @@
 
   </div>
 
+  <script src="assets/javascript/app.js"></script>
 </body>
 
 
